@@ -12,13 +12,13 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-1 flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-6xl font-bold text-white mb-5">
+          <h2 className="text-3xl mt-24 md:mt-0 sm:text-6xl font-bold text-white mb-5">
             Assalamualaikum
           </h2>
-          <h2 className="text-4xl sm:text-6xl font-bold text-white mb-5">
+          <h2 className="text-3xl sm:text-6xl font-bold text-white mb-5">
             This is Apurbo
           </h2>
-          <h2 className="text-4xl sm:text-4xl font-bold text-white mb-10">
+          <h2 className="text-2xl sm:text-5xl font-bold text-white mb-10">
               <Typewriter
                 options={{
                   strings: ["Frontend Developer"],
@@ -45,7 +45,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex-1 ml-20">
+        <div className="flex-1 md:ml-20 mt-10 md:mt-0">
           <img
             src={HeroImage}
             alt="my profile"
