@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { HashLink as Link } from "react-router-hash-link";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -35,16 +35,41 @@ const NavBar = () => {
       </div>
 
       <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
           <li
-            key={id}
             className="px-4 cursor-pointer capitalize text-[20px] font-medium text-gray-500 hover:scale-105 duration-200"
           >
-            <Link to={link} smooth duration={500}>
-              {link}
+            <Link to={"#"} smooth duration={500}>
+              Home
             </Link>
           </li>
-        ))}
+          <li
+            className="px-4 cursor-pointer capitalize text-[20px] font-medium text-gray-500 hover:scale-105 duration-200"
+          >
+            <Link to={"#about"} smooth duration={500}>
+              About
+            </Link>
+          </li>
+          <li
+            className="px-4 cursor-pointer capitalize text-[20px] font-medium text-gray-500 hover:scale-105 duration-200"
+          >
+            <Link to={"#projects"} smooth duration={500}>
+              Projects
+            </Link>
+          </li>
+          <li
+            className="px-4 cursor-pointer capitalize text-[20px] font-medium text-gray-500 hover:scale-105 duration-200"
+          >
+            <Link to={"#skills"} smooth duration={500}>
+              Skills
+            </Link>
+          </li>
+          <li
+            className="px-4 cursor-pointer capitalize text-[20px] font-medium text-gray-500 hover:scale-105 duration-200"
+          >
+            <Link to={"#contact"} smooth duration={500}>
+              Contact
+            </Link>
+          </li>
       </ul>
 
       <div

@@ -5,19 +5,22 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <Home />
-      <About />
-      <Portfolio />
-      <Experience />
-      <Contact />
+    <BrowserRouter>
+      <div>
+        <NavBar />
+        <Home />
+        <About />
+        <Portfolio />
+        <Experience />
+        <Contact />
 
-      <SocialLinks />
-    </div>
+        <SocialLinks />
+      </div>
+    </BrowserRouter>
   );
 }
 
