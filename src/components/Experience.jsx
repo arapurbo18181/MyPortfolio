@@ -7,6 +7,7 @@ import reactImage from "../assets/react.png";
 import nextjs from "../assets/nextjs.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import Firebase from "../assets/firebase.svg";
 
 const Experience = () => {
   const techs = [
@@ -51,6 +52,12 @@ const Experience = () => {
       src: github,
       title: "Git & GitHub",
       style: "shadow-gray-400",
+    },
+    {
+      id: 8,
+      src: Firebase,
+      title: "Firebase",
+      style: "shadow-[#fcca3f]",
     },
   ];
 
